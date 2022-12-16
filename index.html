@@ -48,10 +48,38 @@
         </div>
         <!-- calculator keys -->
         <div class="calculator-keys">
-          <button type="button" class="operator btn" value="+">+</button>
-          <button type="button" class="operator btn" value="-">-</button>
-          <button type="button" class="operator btn" value="*">&times;</button>
-          <button type="button" class="operator btn" value="/">&divide;</button>
+          <button
+            type="button"
+            class="operator btn"
+            value="+"
+            onclick="clicked('+')"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            class="operator btn"
+            value="-"
+            onclick="clicked('-')"
+          >
+            -
+          </button>
+          <button
+            type="button"
+            class="operator btn"
+            value="*"
+            onclick="clicked('*')"
+          >
+            &times;
+          </button>
+          <button
+            type="button"
+            class="operator btn"
+            value="/"
+            onclick="clicked('/')"
+          >
+            &divide;
+          </button>
 
           <button
             type="button"
@@ -164,6 +192,7 @@
             type="button"
             class="equal-sign operator btn btn-default"
             value="="
+            onclick="equalTo()"
           >
             =
           </button>
